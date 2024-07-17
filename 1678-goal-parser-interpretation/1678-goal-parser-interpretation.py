@@ -1,11 +1,11 @@
 class Solution:
     def interpret(self, s: str) -> str:
-        ss=''
-        for i in range(len(s)):
-            if s[i]=="(" and s[i+1]==")":
-                ss+='o' 
-            elif s[i]=='G':
-                ss+='G'
-            elif s[i]=='(' and s[i+1]=='a' and s[i+2]=='l' and s[i+3]==')':
-                ss+="al"
-        return ss
+        res=""
+        for i in range(len(command)):
+            if command[i:i+2]=="()":
+                res+="o"
+            elif command[i:i+4]=="(al)":
+                res+="al"
+            elif command[i]=="G":
+                res+="G"
+        return res
