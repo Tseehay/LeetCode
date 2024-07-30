@@ -1,6 +1,5 @@
 class Solution:
     def applyOperations(self, nums: List[int]) -> List[int]:
-        
         n = len(nums)
         for i in range(n-1):
             if nums[i] == nums[i+1]:
